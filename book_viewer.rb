@@ -1,7 +1,6 @@
 require 'sinatra'
-require 'sinatra/reloader'
+require 'sinatra/reloader' if development?
 require 'tilt/erubis'
-require 'pry'
 
 helpers do
   def in_paragraphs(text)
